@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio de Nadia Tapia</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+  <!-- Font Awesome para iconos de redes sociales -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- BOTÓN DE MODO OSCURO/CLARO -->
+  <button id="modo-toggle" class="modo-toggle" aria-label="Cambiar modo"><i class="fas fa-moon"></i></button>
+
+  <!-- NAVBAR MODERNO Y STICKY -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand nombre-cute" href="#">Nadia Tapia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#hero">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobremi">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portafolio">Portafolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certificados">Certificados</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO MODERNO CON FONDO DE PARTÍCULAS Y CONTADORES -->
+  <section id="hero" class="hero-section d-flex align-items-center justify-content-center text-center animar-entrada position-relative">
+    <canvas id="particles-bg"></canvas>
+    <div class="container position-relative" style="z-index:2;">
+      <h1 class="display-4 fw-bold">¡Hola! Soy Nadia <span class="emoji-cute">💡</span></h1>
+      <p class="lead mb-4">Estudiante del Centro Súperate Fundación Alberto Motta<br>Apasionada por la tecnología, el diseño y la creatividad.</p>
+      <a href="#portafolio" class="btn btn-pink btn-lg">Ver Proyectos</a>
+      <a href="cv-nadia.pdf" class="btn btn-outline-pink btn-lg ms-2" download><i class="fas fa-download"></i> Descargar CV</a>
+      <!-- Contadores animados -->
+      <div class="row justify-content-center mt-4">
+        <div class="col-4 col-md-2">
+          <div class="contador" data-contar="10">0</div>
+          <div class="contador-label">Proyectos</div>
+        </div>
+        <div class="col-4 col-md-2">
+          <div class="contador" data-contar="3">0</div>
+          <div class="contador-label">Años aprendiendo</div>
+        </div>
+        <div class="col-4 col-md-2">
+          <div class="contador" data-contar="5">0</div>
+          <div class="contador-label">Certificados</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN SOBRE MÍ CON TIMELINE ANIMADO -->
+  <section id="sobremi" class="sobremi-section py-5 animar-entrada">
+    <div class="container">
+      <h2 class="text-center mb-4">Sobre mí</h2>
+      <div class="timeline">
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <h5>2021</h5>
+            <p>Comencé mis estudios en el Centro Súperate Fundación Alberto Motta.</p>
+          </div>
+        </div>
+        <div class="timeline-item right">
+          <div class="timeline-content">
+            <h5>2022</h5>
+            <p>Descubrí mi pasión por el desarrollo web y la creatividad digital.</p>
+          </div>
+        </div>
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <h5>2023</h5>
+            <p>Realicé mis primeros proyectos y participé en competencias tecnológicas.</p>
+          </div>
+        </div>
+        <div class="timeline-item right">
+          <div class="timeline-content">
+            <h5>2024</h5>
+            <p>Buscando nuevas oportunidades para crecer y compartir mi trabajo con el mundo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN SERVICIOS MODERNA -->
+  <section id="servicios" class="servicios-section py-5 animar-entrada">
+    <div class="container">
+      <h2 class="text-center mb-4">Servicios</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-12 col-md-4">
+          <div class="servicio-card">
+            <i class="fas fa-laptop-code servicio-icon"></i>
+            <h5>Desarrollo Web</h5>
+            <p>Creación de sitios web modernos, responsivos y creativos.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="servicio-card">
+            <i class="fas fa-paint-brush servicio-icon"></i>
+            <h5>Diseño Creativo</h5>
+            <p>Diseños únicos, coloridos y adaptados a tu personalidad o marca.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="servicio-card">
+            <i class="fas fa-lightbulb servicio-icon"></i>
+            <h5>Solución de Problemas</h5>
+            <p>Ideas innovadoras y soluciones tecnológicas para cualquier reto.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN DE SKILLS MODERNA CON BARRAS DE PROGRESO -->
+  <section id="skills" class="skills-section py-5 animar-entrada">
+    <div class="container">
+      <h2 class="text-center mb-4">Mis Skills</h2>
+      <div class="row justify-content-center g-4">
+        <div class="col-12 col-md-6">
+          <div class="skill-bar">
+            <span class="skill-label">HTML5</span>
+            <div class="progress">
+              <div class="progress-bar bg-pink" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <span class="skill-label">CSS3</span>
+            <div class="progress">
+              <div class="progress-bar bg-pink" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <span class="skill-label">JavaScript</span>
+            <div class="progress">
+              <div class="progress-bar bg-pink" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <span class="skill-label">Bootstrap</span>
+            <div class="progress">
+              <div class="progress-bar bg-pink" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+          <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Avatar Nadia" class="img-fluid rounded-circle shadow-lg" style="max-width: 180px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN PORTAFOLIO MODERNA CON IMÁGENES Y OVERLAY -->
+  <section id="portafolio" class="portafolio-section py-5 animar-entrada">
+    <div class="container">
+      <h2 class="text-center mb-4">Proyectos Destacados</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="card proyecto-card-modern proyecto-hover">
+            <div class="proyecto-img-overlay">
+              <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="Proyecto Creativo" class="img-fluid proyecto-img">
+              <div class="proyecto-overlay">
+                <h5>Proyecto Creativo</h5>
+                <p>Un proyecto que destaca por su creatividad y diseño moderno.</p>
+                <span class="badge bg-pink">HTML, CSS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card proyecto-card-modern proyecto-hover">
+            <div class="proyecto-img-overlay">
+              <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="Proyecto Innovador" class="img-fluid proyecto-img">
+              <div class="proyecto-overlay">
+                <h5>Proyecto Innovador</h5>
+                <p>Un proyecto que muestra innovación y habilidades técnicas.</p>
+                <span class="badge bg-pink">JS, Bootstrap</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card proyecto-card-modern proyecto-hover">
+            <div class="proyecto-img-overlay">
+              <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Proyecto Versátil" class="img-fluid proyecto-img">
+              <div class="proyecto-overlay">
+                <h5>Proyecto Versátil</h5>
+                <p>Un proyecto que combina creatividad, tecnología y versatilidad.</p>
+                <span class="badge bg-pink">Fullstack</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN TESTIMONIOS CON CARRUSEL -->
+  <section id="testimonios" class="testimonios-section py-5 animar-entrada">
+    <div class="container">
+      <h2 class="text-center mb-4">Testimonios</h2>
+      <div id="carouselTestimonios" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="testimonio-card">
+              <p>"Nadia es una estudiante ejemplar, creativa y dedicada. ¡Su futuro es brillante!"</p>
+              <div class="testimonio-autor">- Profesora Ana</div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="testimonio-card">
+              <p>"Siempre busca soluciones innovadoras y trabaja muy bien en equipo."</p>
+              <div class="testimonio-autor">- Compañero Juan</div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="testimonio-card">
+              <p>"Su pasión por la tecnología y el diseño la hace destacar."</p>
+              <div class="testimonio-autor">- Mentora Laura</div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonios" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonios" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN CERTIFICADOS -->
+  <section id="certificados" class="certificados-section py-5 animar-entrada">
+    <div class="container">
+      <h2 class="text-center mb-4">Certificados</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-6 col-md-3 text-center">
+          <a href="#" target="_blank" class="certificado-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135789.png" alt="Certificado 1" class="img-fluid mb-2" style="max-width: 80px;">
+            <div>HTML & CSS</div>
+          </a>
+        </div>
+        <div class="col-6 col-md-3 text-center">
+          <a href="#" target="_blank" class="certificado-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135790.png" alt="Certificado 2" class="img-fluid mb-2" style="max-width: 80px;">
+            <div>JavaScript</div>
+          </a>
+        </div>
+        <div class="col-6 col-md-3 text-center">
+          <a href="#" target="_blank" class="certificado-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135791.png" alt="Certificado 3" class="img-fluid mb-2" style="max-width: 80px;">
+            <div>Bootstrap</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN CONTACTO MODERNA TIPO TARJETA CON REDES SOCIALES -->
+  <section id="contacto" class="contacto-section py-5 animar-entrada">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="contact-card p-4 shadow-lg rounded-4">
+            <h2 class="text-center mb-4">¡Conectemos!</h2>
+            <form class="contacto-form">
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Tu Nombre" required>
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Tu Email" required>
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" rows="4" placeholder="Tu Mensaje" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-pink w-100">Enviar Mensaje</button>
+            </form>
+            <div class="text-center mt-3">
+              <span class="contacto-icon">💬</span>
+            </div>
+            <!-- Redes sociales -->
+            <div class="redes-sociales text-center mt-3">
+              <a href="https://github.com/" target="_blank" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://linkedin.com/" target="_blank" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="https://instagram.com/" target="_blank" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER MINIMALISTA Y MODERNO CON AÑO DINÁMICO Y MINI-BIO -->
+  <footer class="footer-creativo text-center py-3">
+    <div class="mini-bio mb-1">Desarrollado por Nadia Tapia, estudiante apasionada por la tecnología y la creatividad.</div>
+    <small>Centro Súperate Fundación Alberto Motta &copy; <span id="anio-footer"></span></small>
+  </footer>
+
+  <!-- Bootstrap JS y tu JS personalizado -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    // Año dinámico en el footer
+    document.getElementById('anio-footer').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
